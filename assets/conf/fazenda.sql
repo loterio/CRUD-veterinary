@@ -31,10 +31,9 @@ create table veterinario(
 	codigo int auto_increment primary key,
     nome varchar(45) not null,
     crmv varchar(45) not null,
-    telefone varchar(15) not null
+    telefone varchar(15) not null,
+    imagem varchar(100) not null
 );
-select * from veterinario;
-drop table veterinario;
 
 CREATE TABLE gado_has_vet(
 	ultima_consulta DATE not null,
@@ -45,3 +44,9 @@ CREATE TABLE gado_has_vet(
     FOREIGN KEY(gado_codigo) REFERENCES gado(codigo),
     FOREIGN KEY(veterinario_codigo) REFERENCES veterinario(codigo)
 );
+
+#INSERT INTO veterinario
+#	   (nome, crmv, telefone, imagem) 
+#VALUES ("HENRIQUE", 123, 1233414, "assets/img/5e68482c8c137Henrique.jpg");
+
+select * from veterinario;

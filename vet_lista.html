@@ -16,13 +16,10 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" href="index.html">home</a>
+          <a class="nav-link" href="vet.php">home</a>
         </li>
         <li class="nav-ite active">
           <a class="nav-link" href="#">list <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="detail.html">detail</a>
         </li>
       </ul>
     </div>
@@ -33,22 +30,16 @@
     <table class="table">
       <thead class="thead-light">
         <tr>
-          <th scope="col">#</th>
+          <th scope="col">Código</th>
           <th scope="col">Nome</th>
-          <th scope="col">CRMV</th>
+          <th scope="col">Crmv</th>
           <th scope="col">Telefone</th>
-          <th scope="col" colspan="2">Ações</th>
+          <th scope="col">Alterar</th>
+          <th scope="col">Excluir</th> 
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <th scope="row">1</th>
-          <td>{nome}</td>
-          <td>{crmv}</td>
-          <td>{telefone}</td>
-          <td>altera</td>
-          <td>exclui</td>
-        </tr>
+        {itens}
       </tbody>
     </table>
   </div>

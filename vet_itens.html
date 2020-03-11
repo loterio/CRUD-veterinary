@@ -1,0 +1,12 @@
+<tr>
+    <th scope="row">{codigo}</th>
+    <td><a href="vet_detalhado.php?codigo={codigo}">{nome}</a></td>
+    <td>{crmv}</td>
+    <td>{telefone}</td>
+    <td><a href="vet.php?codigo={codigo}">Alterar</a></td>
+    <td>
+        <form action="vet_detalhado.php?codigo={codigo}" method="POST">
+            <input type="submit" value="Excluir">
+        </form>
+    </td>
+  </tr>
