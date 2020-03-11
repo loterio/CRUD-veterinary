@@ -1,5 +1,5 @@
 <?php
-  require_once('utils/utils.php');
+  require_once('assets/conf/functions.php');
   $formulario = file_get_contents('vet_detalhado.html');
   $conexao = criarConexao();
   $sql = 'SELECT * FROM veterinario where codigo = :codigo';

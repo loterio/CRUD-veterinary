@@ -1,5 +1,5 @@
 <?php
-  require_once('utils/utils.php');
+  require_once('assets/conf/functions.php');
   $conexao = criarConexao();
   $sql = 'DELETE FROM veterinario where codigo = :codigo';
   $comando = executaPrepare($sql);

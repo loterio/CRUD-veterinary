@@ -1,5 +1,5 @@
 <?php
-    require_once('utils/utils.php');
+    require_once('assets/conf/functions.php');
     require_once('assets/conf/conf.inc.php');
     $conexao = new PDO(MYSQL,USER,PASSWORD);
     if (!$conexao) {

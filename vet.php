@@ -1,5 +1,5 @@
 <?php
-require_once('utils/utils.php');
+require_once('assets/conf/functions.php');
 if ($_SERVER['REQUEST_METHOD'] == 'GET') { 
   $formulario = file_get_contents('vet.html');
   if (isset($_GET['codigo'])) {
