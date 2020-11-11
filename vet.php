@@ -35,13 +35,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
     $sql = 'UPDATE veterinario 
                SET nome = :nome, 
                    crmv = :crmv, 
-                   telefone = :telefone,
-                   imagem = :imagem  
+                   telefone = :telefone
              WHERE codigo = :codigo';
   } else {
     $sql = 'INSERT INTO veterinario
-                   (nome, crmv, telefone, imagem) 
-            VALUES (:nome, :crmv, :telefone, :imagem)';
+                   (nome, crmv, telefone) 
+            VALUES (:nome, :crmv, :telefone)';
   }
   $comando = executaPrepare($sql);
   executaBindParam($comando);
